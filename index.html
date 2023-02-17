@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <header class="">
     <div class="navbar bg-sky-200 lg:px-12">
@@ -16,18 +18,51 @@
           ">Interactive</span> <br> <span class="text-2xl font-semibold">Geometry Genius</span></a>
       </div>
       <div class="flex-none">
-        <button class=" py-2 rounded-md font-semibold  bg-sky-600 hover:bg-sky-900 px-6 text-white">
+        <button class=" py-2 rounded-md font-semibold  bg-sky-400 hover:bg-sky-600 px-6 text-white">
           Blog
         </button>
       </div>
     </div>
   </header>
-  <main>
+  <main class="bg-green-200">
+    <section class="lg:mx-8">
+      <div class=" flex flex-col w-full md:flex-row lg-flex-row gap-6 w-[70%] ">
+        <!-- card one -->
+        <div class="">
+          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
+            <figure class="px-10 pt-10">
+              <img src="images/triangle.png" alt="triangle" class="rounded-md" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-semibold">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex mb-2">
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="b">
+                <p class="text-2xl font-semibold mx-6">cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="h">
+
+              </div>
+              <div class="card-actions">
+                <button
+                  class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </section>
 
   </main>
 
-  
+
 
   <!-- js file -->
+  <script src="js/app.js"></script>
 </body>
+
 </html>
