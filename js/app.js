@@ -15,14 +15,14 @@ document.getElementById('btn-one').addEventListener('click', function () {
   const firstCardTitle = document.getElementById('first-card-title').innerText;
   
   /* console.log(firstInput, secondInput, typeof  firstCardTitle); */
-  showInput(firstCardTitle,inputResult)
+  showInput(firstCardTitle, inputResult)
   
   
-})
+});
 
 // card two
 document.getElementById('btn-second').addEventListener('click', function () {
-  const firstRectangleField= document.getElementById('first-rectangle');
+  const firstRectangleField = document.getElementById('first-rectangle');
   const firstRectangleString = firstRectangleField.value;
   const firstRectangle = parseFloat(firstRectangleString);
 
@@ -36,9 +36,9 @@ document.getElementById('btn-second').addEventListener('click', function () {
 
   const secondCardTitle = document.getElementById('second-card-title').innerText;
   
-  showInput(secondCardTitle,rectangleResult);
+  showInput(secondCardTitle, rectangleResult);
 
-})
+});
 //card three
 
 document.getElementById('btn-three').addEventListener('click', function () {
@@ -62,8 +62,69 @@ document.getElementById('btn-three').addEventListener('click', function () {
 });
 // card four
 
+document.getElementById('btn-four').addEventListener('click', function () {
+  const firstRhombusField = document.getElementById('first-rhombus');
+  const firstRhombusString = firstRhombusField.value;
+  const firstRhombus = parseFloat(firstRhombusString);
+
+  count = count + 1;
+
+  const secondRhombusField = document.getElementById("second-rhombus");
+  const secondRhombusString = secondRhombusField.value;
+  const secondRhombus = parseFloat(secondRhombusString);
+  
+  const rhombusResult = 0.5 * (firstRhombus * secondRhombus);
+  const fourCardTitle = document.getElementById('four-card-title').innerText;
+
+  showInput(fourCardTitle, rhombusResult)
+
+  console.log(firstRhombus);
+});
+
+// card five
+
+document.getElementById('btn-five').addEventListener('click', function () {
+  const firstPentagonField = document.getElementById('first-pentagon');
+  const firstPentagonString = firstPentagonField.value;
+  const firstPentagon = parseFloat(firstPentagonString);
+
+  count = count + 1;
+
+  const secondPentagonField = document.getElementById('second-pentagon');
+  const secondPentagonString = secondPentagonField.value;
+  const secondPentagon = parseFloat(secondPentagonString);
+
+  const pentagonResult = 0.5 * (firstPentagon * secondPentagon);
+  const fiveCardTitle = document.getElementById('five-card-title').innerText;
+   
+
+  showInput(fiveCardTitle, pentagonResult);
 
 
+});
+
+// six card
+
+document.getElementById('btn-six').addEventListener('click', function () {
+  const firstEllipseField = document.getElementById('first-ellipse');
+  const firstEllipseString = firstEllipseField.value;
+  const firstEllipse = parseFloat(firstEllipseString);
+
+  count = count + 1;
+
+  const secondEllipseField = document.getElementById('second-ellipse');
+  const secondEllipseString = secondEllipseField.value;
+  const secondEllipse = parseFloat(secondEllipseString);
+
+  const ellipseResult = 3.14159265359 * (firstEllipse * secondEllipse);
+
+  const fiveCardTitle = document.getElementById('six-card-title').innerText;
+
+  showInput(fiveCardTitle, ellipseResult.toFixed(2));
+
+
+
+});
 
 function showInput(
   firstCardTitle,
@@ -81,5 +142,5 @@ function showInput(
   
   `;
   displayData.appendChild(tr);
-}
+};
   
