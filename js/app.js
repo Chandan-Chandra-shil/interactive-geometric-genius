@@ -13,6 +13,7 @@ document.getElementById('btn-one').addEventListener('click', function () {
   const secondInputString = secondInputField.value;
   const secondInput = parseFloat(secondInputString);
 
+ 
   const inputResult = 0.5 * (firstInput * secondInput);
 
   const firstCardTitle = document.getElementById('first-card-title').innerText;
