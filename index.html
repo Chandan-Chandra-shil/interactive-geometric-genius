@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="">
+  <header class="header-section">
     <div class="navbar bg-sky-200 lg:px-12">
       <div class="flex-1">
         <a class="  "><span class="text-4xl font-bold
@@ -24,9 +24,9 @@
       </div>
     </div>
   </header>
-  <main class="bg-green-200">
-    <section class="lg:mx-8">
-      <div class="  bg-red-600 gap-2 w-[70%] grid md:grid-cols-2 lg:grid-cols-3 ">
+  <main class="bg-green-100">
+    <section class="lg:mx-8 flex flex-col md:flex-row lg:flex-row ">
+      <div class="   gap-2 w-[70%] grid md:grid-cols-2 lg:grid-cols-3 ">
         <!-- card one -->
         <div class="">
           <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
@@ -37,16 +37,16 @@
               <h2 class="card-title text-2xl font-semibold">Triangle</h2>
               <p>Area (A) = 0.5 x b x h</p>
               <div class="flex mb-2">
-                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                <input id="first-input" type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
                   placeholder="b">
                 <p class="text-2xl font-semibold mx-6">cm</p>
-                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                <input id="second-input" type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
                   placeholder="h">
                   <p class="text-2xl font-semibold mx-6">cm</p>
 
               </div>
               <div class="card-actions">
-                <button
+                <button id="btn-one"
                   class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
               </div>
             </div>
@@ -78,92 +78,114 @@
           </div>
         </div>
         <!-- card three -->
-        <div class=" ">
-          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12 p-11">
+        <div class="">
+          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
             <figure class="px-10 pt-10">
-              <img src="images/parallelogram.png" alt="triangle" class="rounded-md" />
+              <img src="images/parallelogram.png" alt="parallelogram" class="rounded-md" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-semibold">Parallelogram</h2>
               <p>Area (A) = b x h</p>
               <div class="flex mb-2">
-                <p>b=<span>10</span>cm , h=<span>12</span>cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="b">
+                <p class="text-2xl font-semibold mx-6">cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="h">
+                  <p class="text-2xl font-semibold mx-6">cm</p>
 
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-sky-400 py-2 px-12  text-2xl font-bold text-white hover:bg-sky-600 rounded-md ">Calculator</button>
+                  class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- card four -->
-        <div class=" ">
-          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12 p-11">
+        <!-- card four-->
+        <div class="">
+          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
             <figure class="px-10 pt-10">
-              <img src="images/rhombus.png" alt="triangle" class="rounded-md" />
+              <img src="images/rhombus.png" alt="rhombus" class="rounded-md" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-semibold">Rhombus</h2>
-              <p>Area (A) = 0.5 x d1 x d1</p>
+              <p>Area (A) =0.5 x d <sub>1</sub> d <sub>1</sub></p>
               <div class="flex mb-2">
-                <p>b1=<span>16</span>cm , h1=<span>8</span>cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="d">
+                <p class="text-2xl font-semibold mx-6">cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="d">
+                  <p class="text-2xl font-semibold mx-6">cm</p>
 
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-sky-400 py-2 px-12  text-2xl font-bold text-white hover:bg-sky-600 rounded-md ">Calculator</button>
+                  class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- card-five -->
-        <div class=" ">
-          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12 p-11">
+        <!-- card five -->
+        <div class="">
+          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
             <figure class="px-10 pt-10">
-              <img src="images/pentagon.png" alt="triangle" class="rounded-md" />
+              <img src="images/pentagon.png" alt="rhombus" class="rounded-md" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title text-2xl font-semibold">Pentagon</h2>
-              <p>Area (A) =0.5x p x b</p>
+              <h2 class="card-title text-2xl font-semibold">Rhombus</h2>
+              <p>Area (A) =0.5 x p x b </p>
               <div class="flex mb-2">
-                <p>p=<span>6</span>cm , b=<span>10</span>cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="p">
+                <p class="text-2xl font-semibold mx-6">cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="b">
+                  <p class="text-2xl font-semibold mx-6">cm</p>
 
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-sky-400 py-2 px-12  text-2xl font-bold text-white hover:bg-sky-600 rounded-md ">Calculator</button>
+                  class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- card-six -->
-        <div class=" ">
-          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12 p-11">
+        <!-- card five -->
+        <div class="">
+          <div class="card w-96  bg-base-100 shadow-xl lg:mt-12">
             <figure class="px-10 pt-10">
               <img src="images/ellipse.png" alt="ellipse" class="rounded-md" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-2xl font-semibold">Ellipse</h2>
-              <p>Area (A) = </p>
+              <p>Area (A) =&pi; ab </p>
               <div class="flex mb-2">
-                <p>a=<span>10</span>cm , b=<span>4</span>cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="&pi;">
+                <p class="text-2xl font-semibold mx-6">cm</p>
+                <input type="text" class="bg-sky-100 text-sky-400 w-24 pl-2 py-2 rounded-md" name="" id=""
+                  placeholder="ab">
+                  <p class="text-2xl font-semibold mx-6">cm</p>
 
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-sky-400 py-2 px-12  text-2xl font-bold text-white hover:bg-sky-600 rounded-md ">Calculator</button>
+                  class="bg-sky-400 py-2 px-12 text-2xl font-bold text-white hover:bg-sky-600 rounded-md">Calculator</button>
               </div>
             </div>
           </div>
         </div>
-      
-        
-        <!-- <div class=" w-[30%]"> -->
-          <!-- <h3 class="text-4xl text-center underline font-semibold">Area Calculation</h3> -->
-        <!-- </div> -->
+       
+  
+      </div>
+      <div class=" calculation deatils  w-[30%] pt-8">
+        <h3 class="text-4xl text-center underline font-semibold">Area Calculation</h3>
+        <tbody id="show-input-result">
 
-        
+         
+        </tbo>
       </div>
     </section>
 
